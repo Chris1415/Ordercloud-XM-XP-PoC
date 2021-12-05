@@ -1,0 +1,45 @@
+﻿---
+ID: "650c1b6b-5f51-4a99-9d7b-dd6e4087dfed"
+Parent: "c625db2f-6db2-4645-b7f7-733abfc2cac6"
+Template: "5ee505ee-8c0c-4cbd-8815-c1b7b1f06516"
+Path: /sitecore/client/Applications/Launchpad/PageSettings/Buttons/Ordercloud
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+- ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
+  Hint: __Security
+  Value: |
+    ar|sitecore\Sitecore Client Users|pe|+item:read|pd|-item:read|
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20140702T100045
+    - ID: "37b960aa-e219-44e8-8f5d-35781a98b8fa"
+      Hint: RowsNumber
+      Value: 1
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f2b1f47d-03a1-4af6-9df5-b5ea9242082a"
+    - ID: "9d42566f-ef44-4c3a-b6b5-94d9397bc24d"
+      Hint: Title
+      Value: Ordercloud
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20211018T180315Z

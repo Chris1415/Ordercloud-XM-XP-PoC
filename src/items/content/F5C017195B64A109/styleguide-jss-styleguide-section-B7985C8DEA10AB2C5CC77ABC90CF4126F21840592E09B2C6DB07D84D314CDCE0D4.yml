@@ -1,0 +1,60 @@
+﻿---
+ID: "8aa2f853-1c9d-5522-82c1-181fe2a54bc5"
+Parent: "8a15ffd9-18ee-5777-b07f-6119b60cb949"
+Template: "9f98de13-bf1d-551d-8dc3-3d9c00026a5e"
+Path: "/sitecore/content/JSS18Demo/home/styleguide/Page Components/styleguide-jss-styleguide-section-B7985C8DEA10AB2C5CC77ABC90CF4126F21840592E09B2C6DB07D84D314CDCE0D4"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "Styleguide-FieldUsage-ContentList-11"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "11364063-f36b-5eae-9750-21c7c44d382f"
+      Hint: heading
+      Value: Content List
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210827T110955Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a02f93be-a215-4bff-ac15-422ca1d8c787"
+    - ID: "a83b356f-fb6c-573b-954a-b670351ea5a9"
+      Hint: localContentList
+      Value: |
+        {09D47BAF-D223-50D6-BC47-CF6BE9EED1B5}
+        {6E82D80C-644B-5E49-90B3-56921E2E3639}
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\JssImport
+    - ID: "bc6da056-c122-5acc-aec1-d80255a7ecb1"
+      Hint: sharedContentList
+      Value: |
+        {A5088214-C394-5A7D-8059-73298ECD4FA4}
+        {4FF3A769-83F7-5A19-9B72-425E06082B45}
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20210827T110956Z
+    - ID: "ec318892-ce48-588c-8ff5-e19c0eb19d6b"
+      Hint: description
+      Value: |
+        <p>
+          <small>
+            Content Lists are a way to reference zero or more other content items.
+            Referenced items may be shared.
+            To reference a single content item, use an <em>Item Link</em> field.<br />
+            <strong>Note:</strong> Sitecore does not support inline editing of Content List fields. The value must be edited in Experience Editor by using the edit rendering fields button (looks like a pencil) with the whole component selected.
+          </small>
+        </p>
+        

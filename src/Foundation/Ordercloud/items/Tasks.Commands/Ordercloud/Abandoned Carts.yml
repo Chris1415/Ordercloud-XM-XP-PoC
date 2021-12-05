@@ -1,0 +1,41 @@
+﻿---
+ID: "a64a5895-bef2-47cb-9ed7-b358a18f6046"
+Parent: "97d8cb23-5f7c-4d1b-8da2-d8b0ec3bf523"
+Template: "70244923-fa84-477c-8cbd-62f39642c42b"
+Path: /sitecore/system/Tasks/Schedules/Ordercloud/Abandoned Carts
+SharedFields:
+- ID: "50be51f8-746d-4dc2-9c3b-b14abc5ce9b7"
+  Hint: Schedule
+  Value: "||127|00:05:00"
+- ID: "62e64dbb-0a39-4dd7-ba05-7bd08c5404e0"
+  Hint: Command
+  Value: "{7801D875-629C-43C1-92D5-311F6A38C4E9}"
+- ID: "b1e16562-f3f9-4ddd-84ca-6e099950ecc0"
+  Hint: Last run
+  Value: 20211011T110935Z
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190731T091545Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d81de45e-1347-463e-89ed-e9ef65ce65f6"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20211018T201527Z

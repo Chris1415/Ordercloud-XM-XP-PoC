@@ -1,0 +1,56 @@
+﻿---
+ID: "e46baf95-c2d6-5e9a-aabb-3468366216f8"
+Parent: "2a3ab4bd-c007-547a-9ee5-d54f1afe83bd"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: "/sitecore/layout/Placeholder Settings/Project/jssdemo/jss-styleguide-section"
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: "jss-styleguide-section"
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Value: |
+    {37543BD3-6AED-5076-B345-E79F76FEC1DA}
+    {7DC05C46-43C4-50CA-A81B-4BB617A657F7}
+    {DB864B75-C0CB-5C7B-A787-FCAF09D7C7E7}
+    {C4FBAAC8-BEAE-51EA-83C6-0752200846FB}
+    {E92567AC-7549-5339-8CC5-63479189E1B5}
+    {DD0F83BC-3111-570E-8B83-EB2F75A5CE81}
+    {386B765A-2063-5A9B-9F12-9683BAE15A39}
+    {60DDC85B-BC47-5086-B5B4-F273E2C1ACD7}
+    {73A95A35-E8F9-50A4-9C16-5604226AACFB}
+    {48A5B0C7-99BC-572D-B32F-120731906359}
+    {1BB0FB9A-1236-51FF-97C2-9E5CF95446B0}
+    {D574E2A9-C037-55FB-9295-C7682FC610F1}
+    {ABEA07EA-9BA2-5A80-9669-1BEA072A30A1}
+    {87144560-0F42-56E3-8DD6-BB985D19ABD5}
+    {689788C5-36EC-5BA7-BF1E-9A41303638E0}
+    {77D45CCF-E832-5D3E-AD21-C445F5F007D8}
+    {D25F0A7D-E1E7-535E-8868-1982CC4AB404}
+    {EB850C6F-7140-5E2A-B4DA-0D7E87E84BBF}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210827T110948Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\JssImport
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "86198f81-54be-46dd-8972-5fdcaeeafb82"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\JssImport
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20210827T110952Z

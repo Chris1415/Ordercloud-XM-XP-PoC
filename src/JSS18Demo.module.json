@@ -1,0 +1,24 @@
+{
+    "namespace": "JSS18Demo",
+    "references": [ "InitItems" ],
+    "items": {
+        "includes": [
+            {
+                "name": "layouts",
+                "path": "/sitecore/layout/Layouts/Project/jssdemo"
+            },
+            {
+                "name": "placeholders",
+                "path": "/sitecore/layout/Placeholder Settings/Project/jssdemo"
+            },
+            {
+                "name": "renderings",
+                "path": "/sitecore/layout/Renderings/Project/jssdemo"
+            },
+            {
+                "name": "templates",
+                "path": "/sitecore/templates/Project/jssdemo"
+            }
+        ]
+    }
+}

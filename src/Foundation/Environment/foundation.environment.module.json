@@ -1,0 +1,19 @@
+{
+    "namespace": "Foundation.Environment",
+    "items" : {
+        "includes": [
+            {
+                "name": "Templates",
+                "path": "/sitecore/templates/Foundation/Environment",
+                "scope": "ItemAndDescendants",
+				"database": "master"
+            },
+			{
+                "name": "Global",
+                "path": "/sitecore/content/Global",
+                "scope": "SingleItem",
+				"database": "master"
+            }
+        ]
+    }
+}

@@ -1,0 +1,32 @@
+	{
+    "namespace": "Foundation.Products",
+	"references": ["Foundation.Environment"],
+    "items" : {
+        "includes": [
+			{
+                "name": "MediaLib",
+                "path": "/sitecore/media library/Products",
+                "scope": "ItemAndChildren",
+				"database": "master"
+            },
+			{
+                "name": "Templates",
+                "path": "/sitecore/templates/Foundation/Products",
+                "scope": "ItemAndDescendants",
+				"database": "master"
+            },
+			{
+                "name": "Branches",
+                "path": "/sitecore/templates/Branches/Foundation/Products",
+                "scope": "ItemAndDescendants",
+				"database": "master"
+            },
+						{
+                "name": "Global",
+                "path": "/sitecore/content/Global/Products",
+                "scope": "ItemAndChildren",
+				"database": "master"
+            }
+        ]
+    }
+}

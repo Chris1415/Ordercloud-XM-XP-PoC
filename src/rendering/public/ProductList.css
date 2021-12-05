@@ -1,0 +1,8 @@
+.product_list {
+  margin-top: 10px;
+}
+
+.product_list__teaser {
+  border: 1px solid black;
+  padding: 5px;
+}

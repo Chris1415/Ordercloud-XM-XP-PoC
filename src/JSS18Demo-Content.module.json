@@ -1,0 +1,16 @@
+{
+    "namespace": "JSS18Demo-Content",
+    "references": [ "JSS18Demo", "Feature.Products" ],
+    "items": {
+        "includes": [
+            {
+                "name": "content",
+                "path": "/sitecore/content/JSS18Demo"
+            },
+            {
+                "name": "media",
+                "path": "/sitecore/media library/jssdemo"
+            }
+        ]
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "namespace": "Feature.Products",
+	"references": [],
+    "items" : {
+        "includes": [
+			{
+                "name": "Renderings",
+                "path": "/sitecore/layout/Renderings/Feature/Products",
+                "scope": "ItemAndChildren",
+				"database": "master"
+            },
+			{
+                "name": "Images",
+                "path": "/sitecore/media library/Images/Products",
+                "scope": "ItemAndDescendants",
+				"database": "master"
+            },
+			{
+                "name": "Content Resolver",
+                "path": "/sitecore/system/Modules/Layout Service/Rendering Contents Resolvers/Products",
+                "scope": "ItemAndDescendants",
+				"database": "master"
+            }	
+        ]
+    }
+}

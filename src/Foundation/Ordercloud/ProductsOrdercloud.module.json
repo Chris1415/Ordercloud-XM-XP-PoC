@@ -1,0 +1,62 @@
+{
+    "namespace": "Foundation.Products.Ordercloud",
+	"references": ["Foundation.Environment", "Foundation.Products", "Foundation.Products.Ordercloud.Customer"],
+    "items": {
+        "includes": [
+			{
+                "name": "Chunks",
+                "path": "/sitecore/content/Applications/Content Editor/Ribbons/Chunks/Ordercloud - Product Importer",
+                "scope": "ItemAndDescendants",
+				"database": "core"
+            },
+			{
+                "name": "Chunks.Carts",
+                "path": "/sitecore/content/Applications/Content Editor/Ribbons/Chunks/Ordercloud - Carts",
+                "scope": "ItemAndDescendants",
+				"database": "core"
+            },
+			{
+                "name": "Chunks.ContentPages",
+                "path": "/sitecore/content/Applications/Content Editor/Ribbons/Chunks/Ordercloud - Content Pages",
+                "scope": "ItemAndDescendants",
+				"database": "core"
+            },
+			 {
+                "name": "Ribbons",
+                "path": "/sitecore/content/Applications/Content Editor/Ribbons/Ribbons/Default/Products",
+                "scope": "ItemAndDescendants",
+				"database": "core"
+            },
+			{
+                "name": "Strips",
+                "path": "/sitecore/content/Applications/Content Editor/Ribbons/Strips/Products",
+                "scope": "ItemAndDescendants",
+				"database": "core"
+            },
+			{
+                "name": "Templates",
+                "path": "/sitecore/templates/Foundation/Ordercloud",
+                "scope": "ItemAndDescendants",
+				"database": "master"
+            },
+			{
+                "name": "Global",
+                "path": "/sitecore/content/Global/Ordercloud",
+                "scope": "ItemAndChildren",
+				"database": "master"
+            },
+			{
+                "name": "Tasks.Schedules",
+                "path": "/sitecore/system/Tasks/Commands/Ordercloud",
+                "scope": "ItemAndChildren",
+				"database": "master"
+            },
+			{
+                "name": "Tasks.Commands",
+                "path": "/sitecore/system/Tasks/Schedules/Ordercloud",
+                "scope": "ItemAndChildren",
+				"database": "master"
+            }
+        ]
+    }
+}

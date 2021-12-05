@@ -1,0 +1,14 @@
+{
+    "namespace": "Feature.Ordercloud",
+	"references": [],
+    "items" : {
+        "includes": [
+			{
+                "name": "DashboardApp",
+                "path": "/sitecore/client/Applications/Launchpad/PageSettings/Buttons/Ordercloud",
+                "scope": "ItemAndChildren",
+				"database": "core"
+            }
+        ]
+    }
+}

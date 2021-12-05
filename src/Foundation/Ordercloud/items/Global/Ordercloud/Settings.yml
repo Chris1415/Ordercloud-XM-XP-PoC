@@ -1,0 +1,44 @@
+﻿---
+ID: "74b23dcb-eb97-4712-97ff-2f4f583c75c1"
+Parent: "b200729a-65f4-4e0a-b6a9-478c6e6c732c"
+Template: "ce046ca7-2c10-45e7-9214-3a8829a15ac6"
+Path: /sitecore/content/Global/Ordercloud/Settings
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "088ea09b-28de-4023-acfa-bf67dceac0e7"
+      Hint: Catalog Content Root
+      Value: "{C5792BF3-94E4-4FF3-8271-019EAC264319}"
+    - ID: "18e5b8b8-1093-45fe-a3d1-49fced88e97e"
+      Hint: AuthUrl
+      Value: "https://sandboxapi.ordercloud.io"
+    - ID: "1baa5d80-3358-4cf8-bce3-3076ce74d884"
+      Hint: Catalog
+      Value: 
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210924T135302Z
+    - ID: "29e37891-4002-4dbc-8e52-22554aaf2b06"
+      Hint: ClientSecret
+      Value: 
+    - ID: "5888304c-162e-4e29-a8f8-018038407a88"
+      Hint: Username
+      Value: 
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "90094287-d81b-45ba-bbd3-b76bfcda2439"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d2a39a27-90f2-4aaf-a7e2-8c1ffbc32c08"
+      Hint: ClientId
+      Value: 
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20211205T190515Z
+    - ID: "ef1fb986-d333-4b7a-a578-8f6a2796ad0c"
+      Hint: Password
+      Value: 

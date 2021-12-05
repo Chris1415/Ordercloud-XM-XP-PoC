@@ -1,0 +1,92 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28729.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platform", "src\platform\Platform.csproj", "{816F099C-E14B-4468-9E34-87F993C6484D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution Files", "{196B5D43-B228-4632-9BC3-EAAF79B4EDA5}"
+	ProjectSection(SolutionItems) = preProject
+		nuget.config = nuget.config
+		README.md = README.md
+		sitecore.json = sitecore.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{11D974B5-6548-4F07-B2AC-CC378901C79C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{7F54F474-5104-4741-B838-4EC3FC284C26}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Products", "Products", "{D5F38133-5C35-46EF-A577-6DCC02420CF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicCompany.Foundation.Products.Platform", "src\Foundation\Products\platform\BasicCompany.Foundation.Products.Platform.csproj", "{3FBEF93C-4E47-41CF-9970-DE49D737BF00}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ordercloud", "Ordercloud", "{9CD0077C-B3A6-481B-8284-3751B29F9B38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicCompany.Foundation.Products.Ordercloud.Platform", "src\Foundation\Ordercloud\platform\BasicCompany.Foundation.Products.Ordercloud.Platform.csproj", "{51FAD532-E78C-49CD-8CD9-320ECD54E845}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Multisite", "Multisite", "{EADDC546-CB61-473E-8F92-3C92A307A30D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{A4AF893D-121D-477C-A5D1-986E5DEC1BE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicCompany.Feature.Products.Platform", "src\Feature\Products\platform\BasicCompany.Feature.Products.Platform.csproj", "{DCB1674F-39A8-4700-ACDA-728BC42B3FA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicCompany.Foundation.Products.Ordercloud.Customer.Platform", "src\Foundation\Ordercloud Customer\platform\BasicCompany.Foundation.Products.Ordercloud.Customer.Platform.csproj", "{FE594440-5B47-4024-B4D9-F5F1630DF90A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Products", "Products", "{4C90C0B6-70AD-400D-9ECE-F26D98AC7527}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ordercloud", "Ordercloud", "{BD70CE38-EBD5-4C92-A4AE-538576A58A26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicCompany.Feature.Ordercloud.Platform", "src\Feature\Ordercloud\platform\BasicCompany.Feature.Ordercloud.Platform.csproj", "{50F42DFF-5C5E-4392-B516-E58C26555E11}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{816F099C-E14B-4468-9E34-87F993C6484D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{816F099C-E14B-4468-9E34-87F993C6484D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{816F099C-E14B-4468-9E34-87F993C6484D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{816F099C-E14B-4468-9E34-87F993C6484D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FBEF93C-4E47-41CF-9970-DE49D737BF00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FBEF93C-4E47-41CF-9970-DE49D737BF00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FBEF93C-4E47-41CF-9970-DE49D737BF00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FBEF93C-4E47-41CF-9970-DE49D737BF00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51FAD532-E78C-49CD-8CD9-320ECD54E845}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51FAD532-E78C-49CD-8CD9-320ECD54E845}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51FAD532-E78C-49CD-8CD9-320ECD54E845}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51FAD532-E78C-49CD-8CD9-320ECD54E845}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCB1674F-39A8-4700-ACDA-728BC42B3FA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCB1674F-39A8-4700-ACDA-728BC42B3FA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCB1674F-39A8-4700-ACDA-728BC42B3FA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCB1674F-39A8-4700-ACDA-728BC42B3FA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE594440-5B47-4024-B4D9-F5F1630DF90A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE594440-5B47-4024-B4D9-F5F1630DF90A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE594440-5B47-4024-B4D9-F5F1630DF90A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE594440-5B47-4024-B4D9-F5F1630DF90A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50F42DFF-5C5E-4392-B516-E58C26555E11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50F42DFF-5C5E-4392-B516-E58C26555E11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50F42DFF-5C5E-4392-B516-E58C26555E11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50F42DFF-5C5E-4392-B516-E58C26555E11}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7F54F474-5104-4741-B838-4EC3FC284C26} = {11D974B5-6548-4F07-B2AC-CC378901C79C}
+		{D5F38133-5C35-46EF-A577-6DCC02420CF1} = {7F54F474-5104-4741-B838-4EC3FC284C26}
+		{3FBEF93C-4E47-41CF-9970-DE49D737BF00} = {D5F38133-5C35-46EF-A577-6DCC02420CF1}
+		{9CD0077C-B3A6-481B-8284-3751B29F9B38} = {7F54F474-5104-4741-B838-4EC3FC284C26}
+		{51FAD532-E78C-49CD-8CD9-320ECD54E845} = {9CD0077C-B3A6-481B-8284-3751B29F9B38}
+		{EADDC546-CB61-473E-8F92-3C92A307A30D} = {7F54F474-5104-4741-B838-4EC3FC284C26}
+		{A4AF893D-121D-477C-A5D1-986E5DEC1BE1} = {11D974B5-6548-4F07-B2AC-CC378901C79C}
+		{DCB1674F-39A8-4700-ACDA-728BC42B3FA6} = {4C90C0B6-70AD-400D-9ECE-F26D98AC7527}
+		{FE594440-5B47-4024-B4D9-F5F1630DF90A} = {9CD0077C-B3A6-481B-8284-3751B29F9B38}
+		{4C90C0B6-70AD-400D-9ECE-F26D98AC7527} = {A4AF893D-121D-477C-A5D1-986E5DEC1BE1}
+		{BD70CE38-EBD5-4C92-A4AE-538576A58A26} = {A4AF893D-121D-477C-A5D1-986E5DEC1BE1}
+		{50F42DFF-5C5E-4392-B516-E58C26555E11} = {BD70CE38-EBD5-4C92-A4AE-538576A58A26}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7A7C4987-3A11-41A9-8915-5457EF7B5A6F}
+	EndGlobalSection
+EndGlobal

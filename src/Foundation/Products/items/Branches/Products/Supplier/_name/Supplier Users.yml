@@ -1,0 +1,23 @@
+﻿---
+ID: "f3e356e8-2f42-4678-92b3-8d9bdbfd27ee"
+Parent: "3bd2bae7-e787-4e50-b3da-51a9208d8bc9"
+Template: "711a6896-2245-4014-97c3-06887953b319"
+Path: /sitecore/templates/Branches/Foundation/Products/Supplier/$name/Supplier Users
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210922T132427Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "14d14230-d87b-4365-8206-d7ff1c4b8216"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20210922T132427Z

@@ -1,0 +1,14 @@
+{
+    "namespace": "Foundation.Products.Ordercloud.Customer",
+	"references": ["Foundation.Environment", "Foundation.Products"],
+    "items": {
+        "includes": [
+			{
+                "name": "Templates",
+                "path": "/sitecore/templates/Foundation/Ordercloud Customer",
+                "scope": "ItemAndDescendants",
+				"database": "master"
+            }
+        ]
+    }
+}

@@ -1,0 +1,31 @@
+﻿---
+ID: "2ecf04e8-7c9b-4d33-a9db-ce9b510e6677"
+Parent: "a9776d70-37c3-43e3-b150-d88ed28a08fa"
+Template: "a9776d70-37c3-43e3-b150-d88ed28a08fa"
+Path: /sitecore/templates/Foundation/Products/Spec Option Reference/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211103T161030Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "81cdc1fe-061e-4861-b0cb-72e60812c90b"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20211103T161030Z
