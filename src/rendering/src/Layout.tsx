@@ -82,7 +82,7 @@ const Layout = ({ context }: LayoutProps): JSX.Element => {
           type="text/javascript"
           src="https://www.jss18demo.localhost/OrdercloudHelper.js"
         ></script>
-        <link rel="stylesheet" href="https://www.jss18demo.localhost/Sidebar.css" />
+        <link rel="stylesheet" href="https://www.jss18demo.localhost/Foundation.css" />
         <link rel="stylesheet" href="https://www.jss18demo.localhost/ProductList.css" />
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js" />
       </Head>

@@ -16,15 +16,21 @@ function PlaceMessage(message) {
 
 function InitializeSelectVariants() {
   var sel = document.getElementById('variants');
-  AssignProductImage(sel);
-  sel.addEventListener('change', function (e) {
-      AssignProductImage(e.target);
-  });
+  if(sel){
+    AssignProductImage(sel);
+    sel.addEventListener('change', function (e) {
+        AssignProductImage(e.target);
+    });
+  }
 }
 
 function AssignProductImage(element) {
   var pImage = document.getElementById('productImage');
-  var variant = document.getElementById(element.value);
-  var variantImage = variant.getAttribute('img-url');
-  pImage.setAttribute('src', variantImage);
+  if(pImage){
+    var variant = document.getElementById(element.value);
+    var variantImage = variant.getAttribute('img-url');
+    if(variantImage){
+      pImage.setAttribute('src', variantImage);
+    }
+  }
 }

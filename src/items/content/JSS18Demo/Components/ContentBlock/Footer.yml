@@ -1,0 +1,38 @@
+﻿---
+ID: "72ec17a8-69b2-4b2a-9b2a-050b9a91a4dc"
+Parent: "3ec2b5b9-f960-5b0b-ac53-8c2ec917c76b"
+Template: "6b315729-c590-5092-a60b-b7ff687d9dae"
+Path: /sitecore/content/JSS18Demo/Components/ContentBlock/Footer
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0a78e09b-3978-5226-aa45-525af399efff"
+      Hint: content
+      Value: |
+        <img alt="" src="-/media/AEC7A19CA2484248845373157012E02D.ashx" style="width:100%;" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220131T122609Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1377106f-1eeb-4672-b778-c59e03e5e365"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20220202T110555Z

@@ -69,6 +69,7 @@
     <Compile Include="Commands\ImportSuppliersCommand.cs" />
     <Compile Include="Commands\ImportCatalogsCommand.cs" />
     <Compile Include="Constants.cs" />
+    <Compile Include="Extensions\ApiRoleExtensions.cs" />
     <Compile Include="Extensions\LineItemExtensions.cs" />
     <Compile Include="Extensions\SpecOptionExtensions.cs" />
     <Compile Include="Extensions\SpecExtensions.cs" />

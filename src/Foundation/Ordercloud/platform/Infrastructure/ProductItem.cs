@@ -77,6 +77,7 @@ namespace BasicCompany.Foundation.Products.Ordercloud.Infrastructure
                 var productService = DependencyResolver.Current.GetService<IProductService>();
                 string productId = productService.GetProductId(savedItem);
                 string oldProductId = itemChanges.FieldChanges[Products.Templates.ProductData.Fields.Id]?.OriginalValue;
+                string productName = itemChanges.FieldChanges[Products.Templates.ProductData.Fields.Name]?.Value;
                 Task<Product> task = Task.Run(() => ordercloudAsyncService.PatchProductAsync(client, productId, partialProduct));
                 task.Wait();
 
@@ -95,6 +96,12 @@ namespace BasicCompany.Foundation.Products.Ordercloud.Infrastructure
                             savedItem.Name = productId;
                         }
                     }
+
+                    if (!string.IsNullOrEmpty(productName))
+                    {
+                        savedItem[Products.Templates.Base.Fields.DisplayName] = productName;
+                    }
+                  
 
                     savedItem.Editing.EndEdit();
                 }
@@ -148,6 +155,7 @@ namespace BasicCompany.Foundation.Products.Ordercloud.Infrastructure
                     }
                 }
 
+                Sitecore.Caching.CacheManager.ClearAllCaches();
             }
         }
     }

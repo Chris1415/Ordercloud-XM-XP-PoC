@@ -90,8 +90,8 @@ if (Test-Path .\src\items\content) {
      dotnet sitecore ser pull
 }
 
-Write-Host "Custom temporary Code Deployment..." -ForegroundColor Green
-./DeployToDockerDeployFolder.ps1
+#Write-Host "Custom temporary Code Deployment..." -ForegroundColor Green
+#./DeployToDockerDeployFolder.ps1
 
 Write-Host "Opening site..." -ForegroundColor Green
 

@@ -1,6 +1,6 @@
 {
     "namespace": "JSS18Demo-Content",
-    "references": [ "JSS18Demo", "Feature.Products" ],
+    "references": [ "JSS18Demo" ],
     "items": {
         "includes": [
             {

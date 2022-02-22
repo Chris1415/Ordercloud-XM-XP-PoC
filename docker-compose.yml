@@ -127,6 +127,10 @@ services:
       - "traefik.http.routers.cm-secure.rule=Host(`${CM_HOST}`)"
       - "traefik.http.routers.cm-secure.tls=true"
       - "traefik.http.routers.cm-secure.middlewares=force-STS-Header"
+      - "traefik.http.routers.cm-secure2.entrypoints=websecure"
+      - "traefik.http.routers.cm-secure2.rule=Host(`67e1-217-82-222-69.ngrok.io`)"
+      - "traefik.http.routers.cm-secure2.tls=true"
+      - "traefik.http.routers.cm-secure2.middlewares=force-STS-Header"
   xconnect:
     isolation: ${ISOLATION}
     image: ${SITECORE_DOCKER_REGISTRY}sitecore-xp0-xconnect:${SITECORE_VERSION}

@@ -43,9 +43,23 @@ SharedFields:
           key="jss-reuse-example"
           md="{E70DD7B7-DD7F-565E-B86B-600F9381817E}" />
         <r
+          ds="{0CCF48A5-0011-4618-9511-D3F314590D17}"
+          id="{DF855844-53E1-51D4-984B-2762579202D4}"
+          par=""
+          ph="jss-main"
+          uid="{6A52F141-BE53-4C84-9AC2-4D9D6440A9E4}"
+          ccb="Clear on publish" />
+        <r
           id="{A71E9DF0-C5B9-41F3-8D9F-994935A53D95}"
           ph="jss-main"
           uid="{15381D2A-D462-40D0-97C3-4C8331F92457}" />
+        <r
+          ds="{72EC17A8-69B2-4B2A-9B2A-050B9A91A4DC}"
+          id="{DF855844-53E1-51D4-984B-2762579202D4}"
+          par=""
+          ph="jss-main"
+          uid="{56AF3ADE-509D-4195-91A1-94E057173E69}"
+          ccb="Clear on publish" />
       </d>
     </r>
 Languages:
@@ -66,11 +80,11 @@ Languages:
         sitecore\JssImport
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "1a78730c-a583-49af-ba34-c524fd6525ac"
+      Value: "426379ba-62c5-4f7d-a275-0739b9801c9d"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20211108T181619Z
+      Value: 20220131T123008Z

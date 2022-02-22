@@ -11,6 +11,7 @@ namespace BasicCompany.Foundation.Products.Ordercloud.Services
         Task SaveProductCategoryAssignment(OrderCloudClient client, string catalogId, CategoryProductAssignment categoryProductAssignment);
         Task SaveProductCatalogAssignment(OrderCloudClient client, ProductCatalogAssignment productCatalogAssignment);
         Task<Product> PatchProductAsync(OrderCloudClient client, string productId, PartialProduct partialProduct);
+        Task<T> GetProductAsync<T>(OrderCloudClient client, string productId) where T : Product;
         Task<bool> DeleteOrderAsync(OrderCloudClient client, string orderId);
         Task<IList<Order>> GetAsyncOrders(OrderCloudClient client);
         Task<LineItem> GetLineItemAsync(OrderCloudClient client, string productId, string orderId = null);

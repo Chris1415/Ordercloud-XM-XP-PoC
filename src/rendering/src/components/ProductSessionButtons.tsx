@@ -1,15 +1,6 @@
-import { Button } from '@material-ui/core';
 import * as React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-
-const style = makeStyles({
-  SpaceSRight: {
-    marginRight: '10px',
-  },
-});
 
 const ProductSessionButtons = (render: boolean): JSX.Element => {
-  const classes = style();
   if (!render) {
     return <></>;
   } else {
@@ -19,12 +10,11 @@ const ProductSessionButtons = (render: boolean): JSX.Element => {
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <b>Test Buttons for Session/Facet information</b>
+              <h3>Test Buttons for Session/Facet information</h3>
             </div>
-            <div className="col-12">
-              <Button
-                className={classes.SpaceSRight}
-                variant="contained"
+            <div className="col-3">
+              <div
+                className="SitecoreButton SpaceSRight"
                 onClick={() => {
                   (window as { [key: string]: any })['Ajax'](
                     'https://cm.jss18demo.localhost/api/sitecore/productsapi/CheckAbandonedCarts',
@@ -35,10 +25,11 @@ const ProductSessionButtons = (render: boolean): JSX.Element => {
                 }}
               >
                 Abandoned Cart
-              </Button>
-              <Button
-                className={classes.SpaceSRight}
-                variant="contained"
+              </div>
+            </div>
+            <div className="col-3">
+              <div
+                className="SitecoreButton SpaceSRight"
                 onClick={() => {
                   (window as { [key: string]: any })['Ajax'](
                     'https://cm.jss18demo.localhost/api/sitecore/productsapi/CreateOrUpdateContact',
@@ -48,11 +39,12 @@ const ProductSessionButtons = (render: boolean): JSX.Element => {
                   );
                 }}
               >
-                Create or Update Contact in Sitecore
-              </Button>
-              <Button
-                className={classes.SpaceSRight}
-                variant="contained"
+                Create or Update Contact in SC
+              </div>
+            </div>
+            <div className="col-3">
+              <div
+                className="SitecoreButton SpaceSRight"
                 onClick={() => {
                   (window as { [key: string]: any })['Ajax'](
                     'https://cm.jss18demo.localhost/api/sitecore/productsapi/EndVisit',
@@ -63,7 +55,22 @@ const ProductSessionButtons = (render: boolean): JSX.Element => {
                 }}
               >
                 End Visit
-              </Button>
+              </div>
+            </div>
+            <div className="col-3">
+              <div
+                className="SitecoreButton SpaceSRight"
+                onClick={() => {
+                  (window as { [key: string]: any })['Ajax'](
+                    'https://cm.jss18demo.localhost/api/sitecore/productsapi/UpdateOrdercloudFacets',
+                    function (data: any) {
+                      (window as { [key: string]: any })['PlaceMessage'](data);
+                    }
+                  );
+                }}
+              >
+                Update Contact in Ordercloud
+              </div>
             </div>
           </div>
         </div>

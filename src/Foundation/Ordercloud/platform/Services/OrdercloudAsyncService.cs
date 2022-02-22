@@ -1,5 +1,6 @@
 ﻿using BasicCompany.Foundation.Products.Ordercloud.Extensions;
 using OrderCloud.SDK;
+using Sitecore.Diagnostics;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -60,6 +61,19 @@ namespace BasicCompany.Foundation.Products.Ordercloud.Services
             }
         }
 
+        public async Task<T> GetProductAsync<T>(OrderCloudClient client, string productId) where T : Product
+        {
+            try
+            {
+                var product = await client.Products.GetAsync<T>(productId);
+                return product;
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+        }
+
         public async Task<bool> DeleteOrderAsync(OrderCloudClient client, string orderId)
         {
             await client.Orders.DeleteAsync(OrderDirection.Outgoing, orderId);
@@ -75,9 +89,16 @@ namespace BasicCompany.Foundation.Products.Ordercloud.Services
 
         public async Task<IList<LineItem>> GetLineItemsAsync(OrderCloudClient client, string orderId = null)
         {
-            // TODO Make Direction somehow editable
-            var lineItems = await client.LineItems.ListAsync(OrderDirection.Outgoing, orderId);
-            return lineItems.Items;
+            try
+            {
+                // TODO Make Direction somehow editable
+                var lineItems = await client.LineItems.ListAsync(OrderDirection.Outgoing, orderId);
+                return lineItems.Items;
+            }
+            catch (Exception)
+            {
+                return new List<LineItem>();
+            }
         }
 
         public async Task<LineItem> GetLineItemAsync(OrderCloudClient client, string productId, string orderId = null)
@@ -158,9 +179,20 @@ namespace BasicCompany.Foundation.Products.Ordercloud.Services
             }
             catch (Exception e)
             {
+                Log.Error(e.Message, this);
             }
 
-            return await client.LineItems.PatchAsync(orderDirection, orderId, lineItem.ID, lineItem.ToPartialLineItem());
+            try
+            {
+                return await client.LineItems.PatchAsync(orderDirection, orderId, lineItem.ID, lineItem.ToPartialLineItem());
+            }
+            catch (Exception e)
+            {
+                Log.Error(e.Message, this);
+            }
+
+            return null;
+         
         }
 
         public async Task AddSpecProductAssignmentAsync(OrderCloudClient client, SpecProductAssignment specProductAssignment)

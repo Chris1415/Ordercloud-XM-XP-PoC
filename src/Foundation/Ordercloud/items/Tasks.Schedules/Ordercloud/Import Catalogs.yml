@@ -1,0 +1,38 @@
+﻿---
+ID: "4ad8949e-e183-4d05-adbf-90ef972fe48d"
+Parent: "a753c2c4-32d0-41dd-99d5-2efc1279b6d5"
+Template: "58119a3e-560e-4da6-97c6-1ace8a5b1219"
+Path: /sitecore/system/Tasks/Commands/Ordercloud/Import Catalogs
+SharedFields:
+- ID: "4bc75539-d5c4-487b-af35-ff13d62bd286"
+  Hint: Method
+  Value: ExecuteScheduled
+- ID: "752579a7-ef2f-45b7-b9d1-9b682308b7a5"
+  Hint: Type
+  Value: BasicCompany.Foundation.Products.Ordercloud.Commands.ImportCatalogsCommand, BasicCompany.Foundation.Products.Ordercloud
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220219T132854Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "db4782d6-bbb8-4cb1-a984-3642414ed807"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20220219T133148Z

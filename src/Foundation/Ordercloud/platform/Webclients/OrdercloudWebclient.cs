@@ -1,4 +1,5 @@
-﻿using BasicCompany.Foundation.Products.Ordercloud.Services;
+﻿using BasicCompany.Foundation.Products.Ordercloud.Extensions;
+using BasicCompany.Foundation.Products.Ordercloud.Services;
 using OrderCloud.SDK;
 
 
@@ -6,7 +7,8 @@ namespace BasicCompany.Foundation.Products.Ordercloud.Webclients
 {
     public class OrdercloudWebclient : IOrdercloudWebclient
     {
-        private OrderCloudClient _orderCloudClient;
+        private OrderCloudClient _orderCloudBEClient;
+        private OrderCloudClient _orderCloudFEClient;
         private readonly IOrdercloudSettingsRepository _ordercloudSettingsRepository;
 
         public OrdercloudWebclient(IOrdercloudSettingsRepository ordercloudSettingsRepository)
@@ -16,9 +18,9 @@ namespace BasicCompany.Foundation.Products.Ordercloud.Webclients
 
         public OrderCloudClient GetClient(ApiRole[] apiRoles, GrantType grantType = GrantType.ClientCredentials)
         {
-            if (_orderCloudClient == null)
+            if (_orderCloudBEClient == null)
             {
-                _orderCloudClient = new OrderCloudClient(new OrderCloudClientConfig
+                _orderCloudBEClient = new OrderCloudClient(new OrderCloudClientConfig
                 {
                     ClientId = _ordercloudSettingsRepository.GetClientId,
                     ClientSecret = _ordercloudSettingsRepository.GetClientSecret,
@@ -31,27 +33,27 @@ namespace BasicCompany.Foundation.Products.Ordercloud.Webclients
                 });
             }
 
-            return _orderCloudClient;
+            return _orderCloudBEClient;
         }
 
-        public OrderCloudClient GetClient(ApiRole[] apiRoles, string username, string password, GrantType grantType = GrantType.Password)
+        public OrderCloudClient GetUserClient(ApiRole[] apiRoles = null, string username = null, string password = null, GrantType grantType = GrantType.ClientCredentials)
         {
-            if (_orderCloudClient == null)
+            if (_orderCloudFEClient == null)
             {
-                _orderCloudClient = new OrderCloudClient(new OrderCloudClientConfig
+                _orderCloudFEClient = new OrderCloudClient(new OrderCloudClientConfig
                 {
                     ClientId = _ordercloudSettingsRepository.GetClientId,
-                    ClientSecret = string.Empty,
-                    Username = username,
-                    Password = password,
+                    ClientSecret = _ordercloudSettingsRepository.GetClientSecret,
+                    Username = username ?? _ordercloudSettingsRepository.GetUsername,
+                    Password = password ?? _ordercloudSettingsRepository.GetUserPassword,
                     GrantType = grantType,
-                    Roles = apiRoles,
+                    Roles = apiRoles ?? _ordercloudSettingsRepository.ClientSideApiRoles.ToApiRoles(),
                     ApiUrl = _ordercloudSettingsRepository.GetAuthUrl,
                     AuthUrl = _ordercloudSettingsRepository.GetAuthUrl
                 });
             }
 
-            return _orderCloudClient;
+            return _orderCloudFEClient;
         }
     }
 }

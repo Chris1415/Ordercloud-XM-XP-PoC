@@ -1,0 +1,21 @@
+.SitecoreButton {
+  display: block;
+  padding: 16px 30px 17px 30px;
+  margin-top: 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: .3s all;
+  font-size: 17px;
+  letter-spacing: .5px;
+  cursor: pointer;
+  min-width: 229px;
+  text-align: center;
+  border: 1px solid #5548d9;
+  background-color: #5548d9;
+  color: #fff;
+}
+
+.SpaceSRight{
+  margin-right: 10px;
+}

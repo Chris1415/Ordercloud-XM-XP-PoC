@@ -74,6 +74,10 @@
     <None Include="web.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DockerExamples.XConnect.Model\DockerExamples.XConnect.Model.csproj">
+      <Project>{16dc2062-e853-44bb-a006-bc1f4cd5bbcf}</Project>
+      <Name>DockerExamples.XConnect.Model</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Feature\Ordercloud\platform\BasicCompany.Feature.Ordercloud.Platform.csproj">
       <Project>{50f42dff-5c5e-4392-b516-e58c26555e11}</Project>
       <Name>BasicCompany.Feature.Ordercloud.Platform</Name>

@@ -1,25 +1,15 @@
-import { Button } from '@material-ui/core';
 import * as React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-
-const style = makeStyles({
-  SpaceSRight: {
-    marginRight: '10px',
-  },
-});
 
 const ProductInteractionButtons = (productId: string): JSX.Element => {
-  const classes = style();
   return (
     <div className="container">
       <div className="row">
         <div className="col-12">
-          <b>Test Buttons for Ordercloud interactions</b>
+          <h3>Test Buttons for Ordercloud interactions</h3>
         </div>
-        <div className="col-12">
-          <Button
-            className={classes.SpaceSRight}
-            variant="contained"
+        <div className="col-4">
+          <div
+            className="SitecoreButton SpaceSRight"
             onClick={() => {
               (window as { [key: string]: any })['Ajax'](
                 'https://cm.jss18demo.localhost/api/sitecore/productsapi/AddLineItemToCart?productid=' +
@@ -31,10 +21,11 @@ const ProductInteractionButtons = (productId: string): JSX.Element => {
             }}
           >
             Add to Cart
-          </Button>
-          <Button
-            className={classes.SpaceSRight}
-            variant="contained"
+          </div>
+        </div>
+        <div className="col-4">
+          <div
+            className="SitecoreButton SpaceSRight"
             onClick={() => {
               (window as { [key: string]: any })['Ajax'](
                 'https://cm.jss18demo.localhost/api/sitecore/productsapi/RemoveLineItemFromCart?productid=' +
@@ -46,10 +37,11 @@ const ProductInteractionButtons = (productId: string): JSX.Element => {
             }}
           >
             Remove from Cart
-          </Button>
-          <Button
-            className={classes.SpaceSRight}
-            variant="contained"
+          </div>
+        </div>
+        <div className="col-4">
+          <div
+            className="SitecoreButton SpaceSRight"
             onClick={() => {
               (window as { [key: string]: any })['Ajax'](
                 'https://cm.jss18demo.localhost/api/sitecore/productsapi/TriggerBuy?value=' + 50,
@@ -60,7 +52,7 @@ const ProductInteractionButtons = (productId: string): JSX.Element => {
             }}
           >
             Submit Order
-          </Button>
+          </div>
         </div>
       </div>
     </div>

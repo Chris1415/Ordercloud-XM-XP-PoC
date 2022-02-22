@@ -11,7 +11,8 @@ namespace BasicCompany.Foundation.Products.Ordercloud.Customer.Services.Importer
         public CustomProductImportService(
             IOrdercloudWebclient ordercloudWebclient,
             IProductVariantImportService productVariantImportService,
-            ISpecService specService) : base(ordercloudWebclient, productVariantImportService, specService)
+            ISpecService specService,
+            IOrdercloudAsyncService ordercloudAsyncService) : base(ordercloudWebclient, productVariantImportService, specService, ordercloudAsyncService)
         {
         }
 

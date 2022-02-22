@@ -64,6 +64,7 @@
     <Compile Include="Controller\ProductsApiController.cs" />
     <Compile Include="Models\ProductVariantModel.cs" />
     <Compile Include="Models\SpecModel.cs" />
+    <Compile Include="Models\Webhooks\ProductWebhookModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceConfigurator.cs" />
   </ItemGroup>
@@ -76,6 +77,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Foundation\Ordercloud Customer\platform\BasicCompany.Foundation.Products.Ordercloud.Customer.Platform.csproj">
+      <Project>{fe594440-5b47-4024-b4d9-f5f1630df90a}</Project>
+      <Name>BasicCompany.Foundation.Products.Ordercloud.Customer.Platform</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\Foundation\Ordercloud\platform\BasicCompany.Foundation.Products.Ordercloud.Platform.csproj">
       <Project>{51fad532-e78c-49cd-8cd9-320ecd54e845}</Project>
       <Name>BasicCompany.Foundation.Products.Ordercloud.Platform</Name>

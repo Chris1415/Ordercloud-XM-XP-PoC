@@ -23,12 +23,21 @@ Languages:
     - ID: "29e37891-4002-4dbc-8e52-22554aaf2b06"
       Hint: ClientSecret
       Value: 
+    - ID: "2ba9e7d8-449a-43dd-9064-2a5566f9c16f"
+      Hint: Client Side Roles
+      Value: 
+    - ID: "40f72b5d-d48b-4124-80b4-371ac4279fa4"
+      Hint: Client Side Password
+      Value: 
+    - ID: "5073dc66-4ce3-4451-aac9-7938397728a6"
+      Hint: Client Side Username
+      Value: 
     - ID: "5888304c-162e-4e29-a8f8-018038407a88"
       Hint: Username
       Value: 
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "90094287-d81b-45ba-bbd3-b76bfcda2439"
+      Value: "ac57a9b1-c6ee-45c6-a443-380773ad8ab6"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
@@ -38,7 +47,7 @@ Languages:
       Value: 
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20211205T190515Z
+      Value: 20220222T063839Z
     - ID: "ef1fb986-d333-4b7a-a578-8f6a2796ad0c"
       Hint: Password
       Value: 

@@ -1,4 +1,4 @@
-	{
+{
     "namespace": "Foundation.Products",
 	"references": ["Foundation.Environment"],
     "items" : {

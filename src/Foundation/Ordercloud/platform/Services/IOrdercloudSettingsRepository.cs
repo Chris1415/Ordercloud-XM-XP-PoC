@@ -10,5 +10,9 @@ namespace BasicCompany.Foundation.Products.Ordercloud.Services
         string GetClientSecret { get; }
         string GetUsername { get; }
         string GetUserPassword { get; }
+
+        string ClientSideUsername { get; }
+        string ClientSidePassword { get; }
+        string[] ClientSideApiRoles { get; }
     }
 }

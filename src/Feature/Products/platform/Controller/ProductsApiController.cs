@@ -1,9 +1,17 @@
-﻿using BasicCompany.Foundation.Products.Ordercloud.Commands;
+﻿using BasicCompany.Feature.Products.Models.Webhooks;
+using BasicCompany.Foundation.Products.Ordercloud.Commands;
+using BasicCompany.Foundation.Products.Ordercloud.Customer.Models;
+using BasicCompany.Foundation.Products.Ordercloud.Customer.Services.Importer;
 using BasicCompany.Foundation.Products.Ordercloud.Services;
+using BasicCompany.Foundation.Products.Ordercloud.Services.Importer;
 using Microsoft.Extensions.DependencyInjection;
+using Newtonsoft.Json;
+using Sitecore.Configuration;
 using Sitecore.Data;
 using Sitecore.Security.Accounts;
 using Sitecore.Security.Authentication;
+using Sitecore.SecurityModel;
+using System.IO;
 using System.Web.Mvc;
 using System.Web.Security;
 
@@ -13,14 +21,42 @@ namespace BasicCompany.Feature.Products.Controller
     {
         private readonly IOrderService _orderService;
         private readonly IProductService _productService;
+        private readonly ICustomProductImportService _productImportService;
         private const string DummyUser = "sitecore\\cHahn";
 
-        public ProductsApiController(IOrderService orderService, IProductService productService)
+        public ProductsApiController(IOrderService orderService,
+            IProductService productService,
+            ICustomProductImportService productImportService)
         {
             _orderService = orderService;
             _productService = productService;
+            _productImportService = productImportService;
         }
 
+        [HttpPost]
+        public ActionResult UpdateWebhook()
+        {
+            var bodyStream = new StreamReader(HttpContext.Request.InputStream);
+            bodyStream.BaseStream.Seek(0, SeekOrigin.Begin);
+            var bodyText = bodyStream.ReadToEnd();
+            var webhookModel = JsonConvert.DeserializeObject<ProductWebhookModel>(bodyText);
+            if(webhookModel != null)
+            {
+                var productToUpdate = webhookModel.Response.Body.ID;
+                using (new DatabaseSwitcher(Factory.GetDatabase("master")))
+                {
+                    using (new SecurityDisabler())
+                    {
+                        _productImportService.Import<MyProduct>(productToUpdate);
+                    }
+                }
+            }
+            
+            return new JsonResult()
+            {
+                JsonRequestBehavior = JsonRequestBehavior.AllowGet
+            };
+        }
         public ActionResult AddLineItemToCart(string productId)
         {
             var item = _productService.GetProduct(productId);
