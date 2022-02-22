@@ -6,6 +6,15 @@ Once Sitecore Items are present, all kind of OOTB Sitecore functionalities and b
 ## Presentations
 - https://webinars.sitecore.com/sitecore-ordercloud-connector (German)
 
+## Getting Started
+- Use standard init.ps1 and up.ps1
+- Once the instance is up and running go to "/sitecore/content/Global/Ordercloud/Settings"
+- ![image](https://user-images.githubusercontent.com/17895694/155076692-dedd138b-7436-4622-b23a-72a56237b58d.png)
+- Add ClientId, ClientSecret found here
+- ![image](https://user-images.githubusercontent.com/17895694/155076908-1017e1cd-2a09-4176-a1a7-cdf7f51d187c.png)- 
+- Username and Password of some admin user with proper rights e.g. this
+- ![image](https://user-images.githubusercontent.com/17895694/155077055-4a6f54a5-e388-4ba7-aa17-ae6946f4b9e8.png)
+
 ## Feature List
 **Sync of Commerce Data**
  - Have scheduled (nightly) syncs from Ordercloud to Sitecore
@@ -76,3 +85,4 @@ This PoC is not fully implemented and is not meant to be used in production scen
 - No all possible events are implemented on all Entity / Item types
 - Imports do not delete Items, if they are deleted in Ordercloud meanwhile and not transmitted via Webhooks
 - On Item field change clear all caches is executed to let the Content Editor directly reflect these changes properly -> Massiv performance impact on first loads after Clear cache
+
