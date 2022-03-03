@@ -57,7 +57,7 @@ https://user-images.githubusercontent.com/17895694/154804837-6def21d8-4827-4237-
 
  - Full **WYSIWYG** Editor Support
 
-https://user-images.githubusercontent.com/17895694/154804734-52455d55-1525-4295-9481-de5cb65cd3ac.mp4
+https://user-images.githubusercontent.com/17895694/156528415-93c4da17-da12-4c45-9c1a-d89eab7835d2.mp4
 
  - Real Time sync back to Ordercloud via Events
  - More will follow
@@ -66,7 +66,7 @@ https://user-images.githubusercontent.com/17895694/154804734-52455d55-1525-4295-
 
 - Deliver Product Information together with Variant specific information headlessly and statically into any Frontend
 
-https://user-images.githubusercontent.com/17895694/154805834-661a2259-092b-4ef7-9ac3-f0059ddbb762.mp4
+https://user-images.githubusercontent.com/17895694/156529634-58c7fcb2-f915-4c8b-94e0-d274bc7bdbe9.mp4
 
 ## Known Issues
 Currently there are a few known issues, for which workarounds exist. In case you have a solution, don't hesitate to let me know :-D. Cause of some of theses issues, I really got strong headache
