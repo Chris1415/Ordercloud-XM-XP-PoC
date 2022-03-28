@@ -4,7 +4,9 @@ The idea of this PoC was, to showcase the general process, of how Sitecore XM/XP
 Once Sitecore Items are present, all kind of OOTB Sitecore functionalities and benefits are applicable to those Ordercloud related data as well, like full Content & Experience Editor Support. 
 
 ## Presentations
-- https://webinars.sitecore.com/sitecore-ordercloud-connector (German)
+- https://webinars.sitecore.com/sitecore-ordercloud-connector - Introduction (German Content)
+- https://webinars.sitecore.com/ordercloud-connector - Feature Overview(German Content)
+- https://webinars.sitecore.com/sitecore-ordercloud-connector-1 - Analytics Integration (German Content)
 
 ## Getting Started
 - Use standard init.ps1 and up.ps1
