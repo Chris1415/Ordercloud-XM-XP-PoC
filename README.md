@@ -4,7 +4,9 @@ The idea of this PoC was, to showcase the general process, of how Sitecore XM/XP
 Once Sitecore Items are present, all kind of OOTB Sitecore functionalities and benefits are applicable to those Ordercloud related data as well, like full Content & Experience Editor Support. 
 
 ## Presentations
-- https://webinars.sitecore.com/sitecore-ordercloud-connector (German)
+- https://www.youtube.com/watch?v=Fllj1Q_ag_Y&t=97s - Introduction (German Content)
+- https://www.youtube.com/watch?v=4A4l3-a0ZJs&t=7s - Feature Overview(German Content)
+- https://www.youtube.com/watch?v=udraSUUjjT4&t=4s - Analytics Integration (German Content)
 
 ## Getting Started
 - Use standard init.ps1 and up.ps1
@@ -57,7 +59,7 @@ https://user-images.githubusercontent.com/17895694/154804837-6def21d8-4827-4237-
 
  - Full **WYSIWYG** Editor Support
 
-https://user-images.githubusercontent.com/17895694/154804734-52455d55-1525-4295-9481-de5cb65cd3ac.mp4
+https://user-images.githubusercontent.com/17895694/156528415-93c4da17-da12-4c45-9c1a-d89eab7835d2.mp4
 
  - Real Time sync back to Ordercloud via Events
  - More will follow
@@ -66,7 +68,7 @@ https://user-images.githubusercontent.com/17895694/154804734-52455d55-1525-4295-
 
 - Deliver Product Information together with Variant specific information headlessly and statically into any Frontend
 
-https://user-images.githubusercontent.com/17895694/154805834-661a2259-092b-4ef7-9ac3-f0059ddbb762.mp4
+https://user-images.githubusercontent.com/17895694/156529634-58c7fcb2-f915-4c8b-94e0-d274bc7bdbe9.mp4
 
 ## Known Issues
 Currently there are a few known issues, for which workarounds exist. In case you have a solution, don't hesitate to let me know :-D. Cause of some of theses issues, I really got strong headache
