@@ -20,7 +20,13 @@
                 "path": "/sitecore/system/Modules/Layout Service/Rendering Contents Resolvers/Products",
                 "scope": "ItemAndDescendants",
 				"database": "master"
-            }	
+            },
+			{
+                "name": "Templates",
+                "path": "/sitecore/templates/Feature/Products",
+                "scope": "ItemAndChildren",
+				"database": "master"
+            },
         ]
     }
 }
